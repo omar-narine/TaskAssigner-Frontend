@@ -1,31 +1,156 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body{
+  background-color: #F1FAEE;
+  font-family: 'Poppins', sans-serif;;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MainPage {
   display: flex;
+  text-align: center;
+  
+  align-items: center;
   flex-direction: column;
+  background-color: #A8DADC;
+
+  max-width: 1000px;
+  margin: 30px auto;
+  overflow: auto;
+  max-height: 100%;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.AdminPage {
+  display: flex;
+  text-align: center;
+  
+  align-items: center;
+  flex-direction: column;
+  background-color: #A8DADC;
+
+  max-width: 1000px;
+  margin: 30px auto;
+  overflow: auto;
+  max-height: 100%;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.StudentPage {
+  display: flex;
+  text-align: center;
+  
+  align-items: center;
+  flex-direction: column;
+  background-color: #A8DADC;
+
+  max-width: 1000px;
+  margin: 30px auto;
+  overflow: auto;
+  max-height: 100%;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.Button {
+  display: inline-block;
+  background: #1D3557;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.BackButton {
+  display: inline-block;
+  background: #E63946;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.TaskInputField {
+  marigin-top: 20px;
+  width: 300px; 
+  height: 40px;
+  font-size: 20px;
+
+  display: flex;
+  text-align: left;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.SubmitButton {
+  display: inline-block;
+  background: #1D3557;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.Task {
+  background: #f4f4f4;
+  max-height: 300px;
+  width: 500px;
+  margin: 5px;
+  padding: 10px 20px;
+  line-height: 0px;
+  cursor: pointer;
+  justify-content: left;
+}
+
+.Task.Reminder {
+  border-left: 5px solid green;
+}
+
+.Task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Task h5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Task p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @keyframes App-logo-spin {
