@@ -4,19 +4,19 @@ import TaskList from "./TaskList";
 const Task = ({ task, onDelete, toggleStatus }) => {
   return (
     <div
-      className={`Task ${task.status && "Reminder"}`}
+      className={`Task ${task.taskStatus && "Reminder"}`}
       onDoubleClick={() => toggleStatus(task.id)}
     >
       <h5>Task #{task.id}</h5>
       <h3>
-        {task.text}{" "}
+        {task.taskTitle}{" "}
         <FaTimes
           style={{ color: "red", cursor: "pointer" }}
           onClick={() => onDelete(task.id)}
         />
       </h3>
-      <h5>{task.dueDate}</h5>
-      <p>{task.description ? task.description : "N/A"}</p>
+      <h5>{task.taskDueDate}</h5>
+      <p>{task.taskDescription ? task.taskDescription : "N/A"}</p>
     </div>
   );
 };

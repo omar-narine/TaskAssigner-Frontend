@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "taskTitle": "Doctors Appointment",
+      "taskDueDate": "Feb 5th at 2:30 PM",
+      "taskDescription": "",
+      "taskStatus": false
+    },
+    {
+      "id": 2,
+      "taskTitle": "Meeting at School",
+      "taskDueDate": "Feb 6th at 1:30 PM",
+      "taskDescription": "Meeting discussing removal of De Jesus",
+      "taskStatus": false
+    },
+    {
+      "id": 3,
+      "taskTitle": "Food Shopping",
+      "taskDueDate": "Feb 5th at 3:30 PM",
+      "taskDescription": "Apples, Pears, Tomatoes, Onions, Chicken, etc.",
+      "taskStatus": false
+    }
+  ]
+}

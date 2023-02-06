@@ -4,9 +4,9 @@ import { useState } from "react";
 const TaskList = ({ tasks, onDelete, toggleStatus }) => {
   return (
     <>
-      {tasks.map((task) => (
+      {tasks.map((task, index) => (
         <Task
-          key={task.id}
+          key={index}
           task={task}
           onDelete={onDelete}
           toggleStatus={toggleStatus}
