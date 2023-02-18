@@ -1,0 +1,12 @@
+1676522594834	geckodriver	INFO	Listening on 127.0.0.1:55242
+1676522595342	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55243" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/yh/v0z732r549sgxqbj18ky5cl40000gn/T/rust_mozprofileG2wyo8"
+1676522595947	Marionette	INFO	Marionette enabled
+1676522596024	Marionette	INFO	Listening on port 55266
+Read port: 55266
+WebDriver BiDi listening on ws://127.0.0.1:55243
+1676522596104	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/yh/v0z732r549sgxqbj18ky5cl40000gn/T/rust_mozprofileG2wyo8/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55243/devtools/browser/e80bb512-ecab-491e-9a7f-5cd31a8f6535
+1676559849005	Marionette	INFO	Stopped listening on port 55266
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

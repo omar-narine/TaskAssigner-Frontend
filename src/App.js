@@ -1,5 +1,4 @@
 import "./App.css";
-//import "./App2.css";
 import MainPage from "./components/MainPage";
 import StudentPage from "./components/StudentPage";
 import AdminPage from "./components/AdminPage";

@@ -23,6 +23,13 @@ const StudentPage = () => {
     return data;
   };
 
+  const fetchTask = async (id) => {
+    const res = await fetch(`http://localhost:5000/tasks/${id}`);
+    const data = await res.json();
+
+    return data;
+  };
+
   const deleteTask = async (id) => {
     await fetch(`http://localhost:5000/tasks/${id}`, {
       method: "DELETE",
@@ -32,14 +39,27 @@ const StudentPage = () => {
     console.log("Delete", id);
   };
 
-  const toggleStatus = (id) => {
+  const toggleStatus = async (id) => {
+    const taskToToggle = await fetchTask(id);
+    const updatedTasks = {
+      ...taskToToggle,
+      taskStatus: !taskToToggle.taskStatus,
+    };
+
+    const res = await fetch(`http://localhost:5000/tasks/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(updatedTasks),
+    });
+
+    const data = await res.json();
     setTasks(
       tasks.map((task) =>
-        task.id === id ? { ...task, status: !task.status } : task
+        task.id === id ? { ...task, taskStatus: data.taskStatus } : task
       )
     );
-    console.log("Status Changed", id);
-    console.log(tasks);
   };
 
   // Back Button Routing Information
